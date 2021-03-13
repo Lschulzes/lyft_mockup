@@ -1,0 +1,88 @@
+// tablet
+#section-a {
+  margin-bottom: -5rem;
+
+}
+
+#section-b {
+  height: 75vh;
+
+  .content {
+
+    .iphone {
+      padding-top: 15rem;
+    }
+
+    .how-text {
+      h3,
+      .step {transform: translateY(10rem);}
+    }
+  }
+}
+
+@media(max-width: 900px) {
+  #section-b {
+    height: 100vh;
+  }
+}
+
+@media(max-width: 500px) {
+  #header-home {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  #section {
+    &-a {
+      height: auto;
+      padding-bottom: 6rem;
+
+      #why-lyft {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        p {padding-bottom: 1rem;}
+      }
+    }
+
+    &-b {
+      height: 70vh;
+      .content {
+        .iphone {
+          padding-top: 4rem;
+          img {
+            width: 30%;
+          }
+        }
+
+        .how-text {
+          display: block;
+          padding: 30vh 1rem 1rem 2rem;
+        }
+      }
+    }
+
+    &-c {
+      .container{
+        &-inside {
+          .health,
+          .stars {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &-d {
+      .privacy {
+        padding: none;
+        display: flex;
+        
+        a {
+          display: flex;
+          justify-self: center;
+        }
+      }
+    }
+  }
+}
