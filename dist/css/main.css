@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; }
+  body h1 {
+    font-size: 4rem; }
+  body h2 {
+    font-size: 2.5rem; }
+  body h3 {
+    font-size: 2rem; }
+  body h4 {
+    font-size: 1.3rem; }
+
+#header-home {
+  height: 85vh;
+  background: #7156e7f5;
+  color: #fff; }
+  #header-home a {
+    color: #fff; }
+  #header-home .container {
+    max-width: 1200px;
+    margin: auto; }
+  #header-home .nav-bar #logo-pink {
+    width: 100px;
+    padding: .5rem;
+    height: 98px;
+    position: relative;
+    opacity: 0;
+    transition: all 2s; }
+  #header-home .nav-bar #logo-white {
+    width: 100px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 2;
+    transition: all 2s; }
+  #header-home .nav-bar a:hover #logo-white {
+    opacity: 0; }
+  #header-home .nav-bar a:hover #logo-pink {
+    opacity: 1; }
+  #header-home .header-content {
+    padding-left: 2rem;
+    padding-top: 5rem; }
+    #header-home .header-content-words {
+      color: #fff;
+      padding-bottom: .5rem; }
+      #header-home .header-content-words h4 {
+        padding: 2rem 0 0.5rem 0; }
+    #header-home .header-content-input--round {
+      display: flex;
+      padding-bottom: .7rem; }
+      #header-home .header-content-input--round .radio {
+        font-size: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem; }
+      #header-home .header-content-input--round .radio__input input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+        #header-home .header-content-input--round .radio__input input:checked + .radio__control {
+          background: radial-gradient(#fff 56%, rgba(255, 0, 0, 0) 51%); }
+      #header-home .header-content-input--round .radio__control {
+        display: inline-block;
+        width: 1.6em;
+        height: 1.6em;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        transform: translateY(0.65em);
+        cursor: pointer; }
+      #header-home .header-content-input--round .radio__label {
+        padding-left: 0.6rem; }
+      #header-home .header-content-input--round p {
+        padding: .35rem 1rem 1.5rem .8rem;
+        color: #fff;
+        font-weight: 100; }
+    #header-home .header-content .number {
+      width: 300px;
+      height: 60px;
+      background: #5743b4;
+      border: none;
+      border-radius: 8px; }
+    #header-home .header-content ::-webkit-input-placeholder {
+      color: #fff;
+      text-indent: 30px;
+      font-size: 1rem; }
+    #header-home .header-content .square-check {
+      padding-left: 1.5rem; }
+      #header-home .header-content .square-check__input input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+        #header-home .header-content .square-check__input input:checked + .square-check__control {
+          background: radial-gradient(#fff 60%, rgba(113, 86, 233, 0.961) 75%); }
+      #header-home .header-content .square-check__control {
+        display: inline-block;
+        height: 1.6em;
+        width: 1.6em;
+        border-radius: 8px;
+        border: 3px solid #fff;
+        transform: translateY(0.65em);
+        cursor: pointer; }
+    #header-home .header-content .next {
+      padding: 2rem 0; }
+      #header-home .header-content .next-btn {
+        display: block;
+        height: 55px;
+        width: 200px;
+        border-radius: 1500px;
+        font-weight: bolder;
+        font-size: 0.9rem;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 6px #654dd1; }
+        #header-home .header-content .next-btn:hover {
+          color: #fff;
+          background: #000; }
+
+#section-a {
+  height: 80vh;
+  margin-bottom: 5rem; }
+  #section-a .container {
+    max-width: 900px;
+    margin: auto; }
+  #section-a h3 {
+    font-weight: bolder;
+    padding: 0 0 2rem 0;
+    margin-left: 2rem; }
+  #section-a #what-lyft {
+    padding: 5rem 0;
+    max-width: 600px; }
+    #section-a #what-lyft p {
+      margin-left: 2rem; }
+  #section-a #why-lyft {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 2rem;
+    column-gap: 3rem; }
+    #section-a #why-lyft .fas {
+      padding-left: 1.2rem;
+      padding-bottom: 2rem; }
+    #section-a #why-lyft p {
+      line-height: 1.5rem;
+      padding-top: 1rem; }
+
+#section-b {
+  height: 97vh; }
+  #section-b .container {
+    background: url("/dist/img/city.jpg") no-repeat center center/cover;
+    height: 53vh;
+    margin: auto; }
+    #section-b .container-inside {
+      max-width: 1000px;
+      margin: auto; }
+  #section-b .content .iphone {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem; }
+    #section-b .content .iphone .images img#car1 {
+      opacity: 0; }
+    #section-b .content .iphone-box {
+      position: absolute; }
+  #section-b .content .how-text {
+    display: grid;
+    grid-template-columns: 3fr 1fr; }
+    #section-b .content .how-text h3 {
+      text-shadow: 0 0 2px #000;
+      transform: translateY(53vh); }
+    #section-b .content .how-text .step {
+      transform: translateY(53vh); }
+      #section-b .content .how-text .step h4 {
+        text-shadow: 0 0 2px #000; }
+
+#section-c .container {
+  background: #f0f0f0; }
+  #section-c .container-inside {
+    margin: auto;
+    max-width: 750px;
+    padding: 3rem; }
+    #section-c .container-inside .text {
+      line-height: 1.4rem;
+      font-size: 0.9rem;
+      padding-top: 2rem; }
+      #section-c .container-inside .text p {
+        padding-top: 0.6rem; }
+    #section-c .container-inside .health {
+      display: grid;
+      grid-template-columns: 1fr 3fr; }
+    #section-c .container-inside .stars {
+      display: grid;
+      grid-template-columns: 1fr 3fr; }
+
+#section-d .container {
+  max-width: 1000px;
+  margin: auto; }
+#section-d .heading {
+  padding: 3rem;
+  border-bottom: 1px dotted #ccc;
+  width: 80%; }
+#section-d .privacy {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center; }
+#section-d .questions {
+  border-bottom: 1px dotted #ccc;
+  width: 60%;
+  transform: translateX(10rem);
+  color: #041a30; }
+  #section-d .questions button {
+    border: none;
+    background: none;
+    padding: 2rem 2rem;
+    font-size: 1.6rem;
+    justify-self: center;
+    cursor: pointer; }
+  #section-d .questions .content {
+    padding-bottom: 2rem; }
+
+/*# sourceMappingURL=main.css.map */
